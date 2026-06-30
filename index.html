@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Fogón de Vida</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   :root{
@@ -18,13 +18,18 @@
     --white:#fff;
   }
   html{scroll-behavior:smooth;}
-  body{background:var(--bg);color:var(--cream);font-family:'Lato',sans-serif;}
+  body{background:var(--bg);color:var(--cream);font-family:'Montserrat',sans-serif;}
+  h1,h2,h3,.section-title,.hero h1,.nav-brand,.footer-brand{font-family:'Bebas Neue',sans-serif;letter-spacing:3px;}
+  .section-title{font-size:clamp(2.5rem,5vw,4rem);font-weight:400;}
+  .menu-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:2px;}
+  .nosotros-badge .sub{font-family:'Montserrat',sans-serif;font-style:normal;font-weight:300;}
+  .hero-tagline{font-family:'Montserrat',sans-serif;font-style:italic;font-size:clamp(1rem,2.5vw,1.3rem);}
 
   /* NAV */
   nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(11,8,4,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,149,42,0.2);padding:14px 40px;display:flex;align-items:center;justify-content:space-between;}
   .nav-logo{display:flex;align-items:center;gap:12px;}
-  .nav-logo svg{width:44px;height:44px;}
-  .nav-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;letter-spacing:2px;color:var(--cream);line-height:1.2;}
+  .nav-logo img{width:50px;height:50px;border-radius:50%;object-fit:cover;}
+  .nav-brand{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--cream);line-height:1.2;}
   .nav-links{display:flex;gap:32px;list-style:none;}
   .nav-links a{color:var(--muted);text-decoration:none;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;transition:color .3s;}
   .nav-links a:hover{color:var(--orange);}
@@ -178,14 +183,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="30" cy="30" r="29" stroke="#c9952a" stroke-width="1"/>
-      <!-- flame -->
-      <path d="M30 10 C30 10 38 20 36 28 C34 22 30 22 30 22 C30 22 32 28 28 32 C27 28 24 26 26 20 C22 24 20 30 22 36 C18 32 17 26 20 20 C16 26 18 36 24 40 C26 42 28 44 30 44 C32 44 34 42 36 40 C42 36 44 26 40 20 C38 28 34 30 34 30 C36 22 30 10 30 10Z" fill="#e07b1a"/>
-      <!-- fork & knife -->
-      <line x1="23" y1="46" x2="23" y2="52" stroke="#c9952a" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="37" y1="46" x2="37" y2="52" stroke="#c9952a" stroke-width="1.5" stroke-linecap="round"/>
-    </svg>
+    <img src="https://i.postimg.cc/m2dZGFMX/image.png" alt="Logo Fogón de Vida"/>
     <div class="nav-brand">FOGÓN<br>DE VIDA</div>
   </div>
   <ul class="nav-links">
@@ -208,19 +206,7 @@
   <div class="hero-bg"></div>
   <div class="hero-particles" id="particles"></div>
   <div class="hero-logo">
-    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="110" height="110">
-      <circle cx="50" cy="50" r="48" stroke="#c9952a" stroke-width="1.5" opacity=".6"/>
-      <circle cx="50" cy="50" r="44" stroke="#c9952a" stroke-width=".5" opacity=".3"/>
-      <path d="M50 14 C50 14 64 30 61 44 C58 34 50 34 50 34 C50 34 54 44 46 52 C44 44 38 40 42 30 C36 36 32 46 36 56 C28 50 26 38 32 28 C26 38 28 54 38 62 C41 65 44 68 50 68 C56 68 59 65 62 62 C72 54 74 38 68 28 C65 40 58 44 58 44 C62 30 50 14 50 14Z" fill="url(#flame-grad)"/>
-      <line x1="38" y1="72" x2="38" y2="82" stroke="#c9952a" stroke-width="2" stroke-linecap="round"/>
-      <line x1="62" y1="72" x2="62" y2="82" stroke="#c9952a" stroke-width="2" stroke-linecap="round"/>
-      <defs>
-        <linearGradient id="flame-grad" x1="50" y1="14" x2="50" y2="68" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#f5a623"/>
-          <stop offset="100%" stop-color="#e07b1a"/>
-        </linearGradient>
-      </defs>
-    </svg>
+    <img src="https://i.postimg.cc/m2dZGFMX/image.png" alt="Logo Fogón de Vida" style="width:140px;height:140px;border-radius:50%;object-fit:cover;box-shadow:0 0 40px rgba(224,123,26,0.3);"/>
   </div>
   <div class="section-tag">Experiencia gastronómica</div>
   <h1>FOGÓN<br><span>DE VIDA</span></h1>
@@ -242,9 +228,8 @@
         <div class="section-tag">Nuestra historia</div>
         <h2 class="section-title">Una mesa familiar<br>abierta al mundo</h2>
         <div class="section-divider"></div>
-        <p>Fogón de Vida nació de la <span>pasión de una madre</span> por la cocina y el deseo de compartir sabores únicos con quienes se animaran a vivir algo diferente. Lo que comenzó como una idea se convirtió en una verdadera experiencia gastronómica.</p>
-        <p>Cada mes, preparamos un <span>menú completamente nuevo</span>, pensado con dedicación para sorprender el paladar. Nuestros comensales no solo vienen a comer: vienen a compartir, a disfrutar y a llevarse un recuerdo.</p>
-        <p>Te esperamos en nuestra casa, en el corazón de Paraná, para vivir una <span>noche que no vas a olvidar</span>.</p>
+        <p>Nuestra casa abre sus puertas una vez al mes para ofrecer una <span>velada culinaria única</span>. El calor del fogón une a un grupo selecto de comensales en torno a una mesa compartida, donde la cocina tradicional y los cortes premium a la parrilla son los verdaderos protagonistas.</p>
+        <p>Bajo la premisa de honrar las brasas y las recetas heredadas, creamos una <span>noche mágica complementada con acordes de música en vivo</span>, ofreciendo un refugio de sabores y buenas historias en el corazón de Paraná.</p>
         <br>
         <a href="#menu" class="btn">Ver menú del mes</a>
       </div>
@@ -257,6 +242,30 @@
           <div style="width:40px;height:1px;background:rgba(201,149,42,0.4);margin:0 auto 14px;"></div>
           <div style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);">Una experiencia</div>
           <div style="font-family:'Playfair Display',serif;color:var(--gold);font-style:italic;margin-top:4px;">única e irrepetible</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo" style="background:var(--bg2);padding:90px 40px;">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div>
+        <div class="section-tag">Quiénes somos</div>
+        <h2 class="section-title">Nuestro<br>Equipo</h2>
+        <div class="section-divider"></div>
+        <p style="color:var(--muted);line-height:1.9;font-size:1.05rem;margin-bottom:16px;">Detrás del fuego de <span style="color:var(--cream);">Fogón de Vida</span> estamos nosotras, un grupo de amigas apasionadas por la buena mesa, el asado y la calidez del hogar. Abrimos las puertas de nuestra casa familiar con el deseo de compartir momentos únicos y platos tradicionales hechos con el alma.</p>
+        <p style="color:var(--muted);line-height:1.9;font-size:1.05rem;">Desde la cuidada selección de cada corte de carne y el encendido cuidadoso de las brasas de espinillo, hasta los detalles de la mesa y la música acústica que envuelve la velada, todo es pensado y ejecutado por nosotras para brindarte un <span style="color:var(--cream);">encuentro inolvidable en Paraná</span>.</p>
+      </div>
+      <div style="display:flex;justify-content:center;">
+        <div style="position:relative;">
+          <img src="https://i.postimg.cc/G212sfs6/Whats-App-Image-2026-06-08-at-22-47-15-(1).jpg" alt="El equipo de Fogón de Vida" style="width:100%;max-width:400px;height:480px;object-fit:cover;object-position:top;display:block;"/>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(to top,rgba(11,8,4,.9),transparent);">
+            <div style="font-family:'Playfair Display',serif;color:var(--white);font-size:1.1rem;">El equipo</div>
+            <div style="color:var(--orange);font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-top:4px;">Fogón de Vida</div>
+          </div>
         </div>
       </div>
     </div>
@@ -316,34 +325,34 @@
     <div class="menu-header">
       <div>
         <div class="section-tag">Menú del mes</div>
-        <h2 class="section-title">Propuesta de Junio</h2>
+        <h2 class="section-title">Propuesta de Julio</h2>
         <div class="section-divider"></div>
       </div>
       <div class="menu-badge">
-        <div class="mes">Junio 2026</div>
+        <div class="mes">18 de Julio 2026</div>
         <div class="mes-nombre">Noche Gastronómica</div>
-        <div class="precio">$45.000 <span>por persona</span></div>
+        <div class="precio">$25.000 <span>por persona</span></div>
       </div>
     </div>
 
     <div class="menu-grid">
       <div class="menu-card">
-        <div class="menu-card-icon">🥗</div>
+        <div class="menu-card-icon">🫔</div>
         <div class="menu-card-tag">Entrada</div>
-        <h3>Empanadas de Copetín</h3>
-        <p>Selección de empanadas fritas artesanales. Masa crocante, rellenos de temporada con hierbas frescas.</p>
+        <h3>Empanadas de Carne</h3>
+        <p>Empanadas artesanales de carne, elaboradas con masa casera y relleno tradicional. El comienzo perfecto para una noche al calor del fogón.</p>
       </div>
       <div class="menu-card">
-        <div class="menu-card-icon">🔥</div>
+        <div class="menu-card-icon">🍲</div>
         <div class="menu-card-tag">Plato Principal</div>
-        <h3>Asado a la Parrilla</h3>
-        <p>Cortes seleccionados a las brasas, cocción lenta y cuidada. Acompañado de guarniciones de estación.</p>
+        <h3>Guiso de Lentejas</h3>
+        <p>Guiso de lentejas preparado con ingredientes de primera calidad, cocción lenta y el sabor de las recetas de siempre. Un abrazo en plato.</p>
       </div>
       <div class="menu-card">
-        <div class="menu-card-icon">🍰</div>
+        <div class="menu-card-icon">🎂</div>
         <div class="menu-card-tag">Postre</div>
-        <h3>Torta de la Casa</h3>
-        <p>Creación especial del mes, elaborada con ingredientes frescos. Sorpresa dulce para cerrar la velada.</p>
+        <h3>Tortas Varias</h3>
+        <p>Selección de tortas caseras elaboradas especialmente para cerrar la velada con el dulzor que merece cada noche en el Fogón.</p>
       </div>
     </div>
 
@@ -466,10 +475,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-logo">
-        <svg viewBox="0 0 60 60" fill="none" width="48" height="48">
-          <circle cx="30" cy="30" r="29" stroke="#c9952a" stroke-width="1"/>
-          <path d="M30 10 C30 10 38 20 36 28 C34 22 30 22 30 22 C30 22 32 28 28 32 C27 28 24 26 26 20 C22 24 20 30 22 36 C18 32 17 26 20 20 C16 26 18 36 24 40 C26 42 28 44 30 44 C32 44 34 42 36 40 C42 36 44 26 40 20 C38 28 34 30 34 30 C36 22 30 10 30 10Z" fill="#e07b1a"/>
-        </svg>
+        <img src="https://i.postimg.cc/m2dZGFMX/image.png" alt="Logo Fogón de Vida" style="width:54px;height:54px;border-radius:50%;object-fit:cover;"/>
         <div>
           <div class="footer-brand">FOGÓN DE VIDA</div>
           <div class="footer-tagline">Experiencia gastronómica · Paraná, ER</div>
@@ -504,7 +510,7 @@ function openLightbox(el){
 }
 function closeLightbox(){document.getElementById('lightbox').classList.remove('active');}
 
-document.querySelector('.nav-links').innerHTML += '<li><a href="#galeria">Galería</a></li><li><a href="#eventos">Eventos</a></li>';
+document.querySelector('.nav-links').innerHTML += '<li><a href="#equipo">Equipo</a></li><li><a href="#galeria">Galería</a></li><li><a href="#eventos">Eventos</a></li>';
 
 // Spark particles in hero
 const container = document.getElementById('particles');
